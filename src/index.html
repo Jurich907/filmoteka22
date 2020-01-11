@@ -4,42 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Starter Kit</title>
-
-    <!-- Don't forget to delete this style tag. -->
-    <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro {
-        text-align: center;
-      }
-
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
-
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
+    <title>Filmoteka FE22</title>
   </head>
 
-  <body>
-    <article class="intro">
-      <h1>Webpack starter kit</h1>
+  <body class="body">
+    <header class="header">
+      <div class="header__content">
+        <h1 id="js-logo">
+          <a class="header__link" href="#">
+            <img class="header__logo" src="./images/logo.png" alt="logo" />
+            <p class="header__logoTitle">Filmoteka</p>
+          </a>
+        </h1>
+        <nav>
+          <ul class="header__navList">
+            <li>
+              <a id="js-linkHomePage" class="header__navListLink" href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a id="js-linkLibraryPage" class="header__navListLink" href="#"
+                >My library</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <!-- HTML image reference example. -->
-      <img src="images/intro.png" alt="" width="640" />
-    </article>
+    <footer class="footer">
+      <h2 class="footer__author">Made by FE22</h2>
+    </footer>
+    <!-- //= ./html/header.html //= ./html/main.html //= ./html/footer.html -->
+
+    <!-- <script src="js/scripts.js"></script> -->
   </body>
 </html>
