@@ -1,0 +1,51 @@
+<div class="details-page">
+  <article class="card-details" data-id="{{id}}">
+    <img src="{{ poster_path }}" alt="" class="card-details__img"/>
+
+    <div class="card-details__wrapper">
+      <h2 class="card-details__title"> {{title}}</h2>
+      <div class="card-details__description">
+        <p class="card-details__votes">
+          <span class="card-details__votes--title">Vote / Votes</span>
+          <span class="card-details__votes--value"> {{vote_average}} / {{vote_count}}</span>
+        </p>
+        <p class="card-details__popularity">
+          <span class="card-details__popularity--title">Popularity</span>
+          <span class="card-details__popularity--value"> {{ popularity }}</span>
+        </p>
+        <p class="card-details__name">
+          <span class="card-details__name--title">Original title</span>
+          <span class="card-details__name--value">{{original_title}}</span>
+        </p>
+        <p class="card-details__genre">
+          <span class="card-details__genre--title">Genre</span>
+          <span class="card-details__genre--value">{{genres}} </span>
+        </p>
+      </div>
+      <div class="card-details__about">
+        <h3 class="card-details__about--title">About</h3>
+        <p class="card-details__about--text">{{overview}}</p>
+      </div>
+      <div class="card-details__actions">
+        <button class="card-details__action-btn" data-action="add-to-watched">
+          <i class="fas fa-video card-details__action-img"></i>
+          <span class="card-details__action-text video-icon">Add to watched</span>
+        </button>
+        <button class="card-details__action-btn" data-action="delete-from-watched">
+            <i class="far fa-trash-alt card-details__action-img"></i>
+          <span class="card-details__action-text trash-icon">Remove from watched</span>
+        </button>
+        <button class="card-details__action-btn" data-action="add-to-queue">
+          <i class="far fa-calendar-plus card-details__action-img"></i>
+          <span class="card-details__action-text">Add to queue</span>
+        </button>
+        <button class="card-details__action-btn" data-action="delete-from-queue">
+          <i class="far fa-calendar-minus card-details__action-img"></i>
+          <span class="card-details__action-text">Remove from queue</span>
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+
