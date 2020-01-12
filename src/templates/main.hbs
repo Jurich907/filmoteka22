@@ -1,17 +1,18 @@
 <div class="input_search">
     <div class="search">
         <form class="search-form">
-            <img src="./images/icon_search.png" alt="search_icon" class="search__icon" />
+            <i class="fas fa-search search__icon"></i>
             <input type="type" class="search-form__input" placeholder="Write movie name and click Enter" />
         </form>
     </div>
 
     <ul class="filmList">
     {{#each this}}
-    
         <li class="filmList__item">
-            <img src="https://image.tmdb.org/t/p/original{{this.backdrop_path}}" alt="film" class="filmList__poster">
-            <p class="item__name">{{title}}({{release_date}})</p>
+            <a href="/?id={{this.id}}#inner-page">
+                <img src="https://image.tmdb.org/t/p/original{{this.backdrop_path}}" alt="film" class="filmList__poster">
+                <p class="item__name">{{title}}({{release_date}})</p>
+            </a>
         </li>
      {{/each}}
     </ul>

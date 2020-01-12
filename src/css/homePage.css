@@ -11,7 +11,9 @@
   .search__icon {
     left: 0px;
     position: absolute;
+    color: grey;
   }
+  
   
   .search-form__input {
     cursor: pointer;

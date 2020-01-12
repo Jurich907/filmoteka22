@@ -3,7 +3,6 @@ import myFilmLibraryPage from '../templates/myFilmLibraryPage.hbs';
 const myFilmLibraryPageContainer = document.querySelector (".main");
 
 
-
 function render(filmData) {
   myFilmLibraryPageContainer.innerHTML = myFilmLibraryPage(filmData)
 }

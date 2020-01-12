@@ -6,7 +6,7 @@ export default function () {
     
     const main = document.querySelector('.main')
     const refs = {};
-    const filmId = new URL(window.location.href).searchParams.get('id') || 100000;
+    const filmId = new URL(window.location.href).searchParams.get('id') || 100100;
     
     let movie;
     let activeWatchedBtn;

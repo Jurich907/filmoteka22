@@ -4,6 +4,7 @@ export function addActionsToMainPage () {
     const form = document.querySelector('.search-form');
     const btnPrev = document.querySelector('.page_prev');
     const btnNext = document.querySelector('.page_next');
+    console.dir(btnNext)
     const btnPageNumber = document.querySelector('.number_page');
     const containerBtn = document.querySelector('.button_page');
     
@@ -16,6 +17,8 @@ export function addActionsToMainPage () {
       btnPrev.classList.add('disable')}
       }
       
+
+
 btnNext.addEventListener('click', () => console.log(22))
 input.addEventListener('input', () => console.log(11111))
 

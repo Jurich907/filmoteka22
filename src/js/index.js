@@ -1,4 +1,8 @@
-import '../css/detailsStyles.css';
+import '../css/styles.css';
+
+import '../js/hb';
+// import '../js/myFilmLibraryPage';
+
 import detailsPage from '../js/details';
 require('@fortawesome/fontawesome-free/js/all');
 

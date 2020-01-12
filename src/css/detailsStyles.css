@@ -159,6 +159,11 @@
   .card-details__genre--value {
     max-width: 150px;
   }
+  .card-details__name--value{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   .card-details__description,
   .card-details__about {
