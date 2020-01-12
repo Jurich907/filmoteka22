@@ -1,1 +1,11 @@
 @import './css/homePage.css';
+@import './css/normalize.css';
+@import './css/reset.css';
+@import "./css/fonts.css";
+@import './css/header.css';
+@import './css/footer.css';
+/* @import './css/detailsPage.css'; */
+/* @import './css/homePage.css'; */
+@import './css/myFilmLibraryPage.css';
+@import './css/main.css';
+
