@@ -1,14 +1,15 @@
 <div class="myFilmLibraryPage__container">
   <div class="myFilmLibraryPage__modes">
-      <button class="buttonWAtched button__white">
+      <button class="buttonWatched button__white button__active">
         Watched
       </button>
     
-      <button class="myFilmLibraryPage__buttonQueue button__white">
+      <button class="buttonQueue button__white">
         Queue
       </button>
   
   </div>
-  <ul class="myFilmLibraryPage__film-card">
-  </ul>
+
+  {{> filmList this}}
+  
 </div>

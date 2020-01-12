@@ -21,7 +21,7 @@ export default function () {
           film.poster_path = imageUrl + film.poster_path;
           movie = film;
           render(film);
-          console.log(film)
+          // console.log(film)
         })
         .catch(error => console.log(error));
       }
@@ -31,16 +31,10 @@ export default function () {
     function render(filmData) {
       concatGenreNamesBYComa(filmData)
       main.innerHTML = detailsPage(filmData)
-      // getMovieById(filmData.id)
       addActions()
       showWatchedBtn()
       showQueueBtn()
     }
-    
-    
-    // const getMovieById = (id) => {
-    //   console.log(id)
-    // } 
     
     
     function concatGenreNamesBYComa(filmData) {

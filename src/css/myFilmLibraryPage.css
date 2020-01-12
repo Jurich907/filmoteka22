@@ -36,6 +36,11 @@ li {
   border: none;
   color: #fff;
 }
+.button__active {
+  background-color: #77c1bb;
+  border: none;
+  color: #fff;
+}
 
 .myFilmLibraryPage__modes button:hover {
   background-color: #77c1bb;

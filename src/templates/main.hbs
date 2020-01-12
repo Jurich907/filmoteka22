@@ -5,18 +5,8 @@
             <input type="type" class="search-form__input" placeholder="Write movie name and click Enter" />
         </form>
     </div>
-
-    <ul class="filmList">
-    {{#each this}}
-        <li class="filmList__item">
-            <a href="/?id={{this.id}}#inner-page">
-                <img src="https://image.tmdb.org/t/p/original{{this.backdrop_path}}" alt="film" class="filmList__poster">
-                <p class="item__name">{{title}}({{release_date}})</p>
-            </a>
-        </li>
-     {{/each}}
-    </ul>
-
+    
+    {{> filmList this}}
 
     <div class="button_page">
         <button class="page_prev">Prev</button>
