@@ -1,0 +1,25 @@
+<div class="input_search">
+    <div class="search">
+        <form class="search-form">
+            <img src="./images/icon_search.png" alt="search_icon" class="search__icon" />
+            <input type="type" class="search-form__input" placeholder="Write movie name and click Enter" />
+        </form>
+    </div>
+
+    <ul class="filmList">
+    {{#each this}}
+    
+        <li class="filmList__item">
+            <img src="https://image.tmdb.org/t/p/original{{this.backdrop_path}}" alt="film" class="filmList__poster">
+            <p class="item__name">{{title}}({{release_date}})</p>
+        </li>
+     {{/each}}
+    </ul>
+
+
+    <div class="button_page">
+        <button class="page_prev">Prev</button>
+        <button class="number_page">1</button>
+        <button class="page_next">Next</button>
+    </div>
+</div>
